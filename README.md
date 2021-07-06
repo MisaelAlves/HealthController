@@ -43,7 +43,7 @@
 ### Estrutura de Arquivos
 
 A estrutura de arquivos está da seguinte maneira:
-bash
+```bash
 Helth-Controller
 ├── src/
 │   ├── config/
@@ -75,3 +75,4 @@ Helth-Controller
 ├── LICENSE
 ├── package.json
 └── README.md
+```
