@@ -39,3 +39,39 @@
 - [ ] O cadastro de clientes
 - [ ] Poder fazer cadastro de alarmes de forma offline
 - [ ] Ter a interface com acessibilidae para o público alvo, idosos.
+
+### Estrutura de Arquivos
+
+A estrutura de arquivos está da seguinte maneira:
+bash
+Helth-Controller
+├── src/
+│   ├── config/
+│   │   └── ReactotronConfig.js
+│   ├── images/
+│   │   ├── helthController_logo_roxa.png
+│   │   └── helthController_logo.png
+│   ├── pages/
+│   │   └── Main/
+│   │       └── index.js
+│   ├── services/
+│   │   └── api.js
+│   ├── store/
+│   │   ├── ducks/
+│   │   │   └── index.js
+│   │   ├── sagas/
+│   │   │   └── index.js
+│   │   └── index.js
+│   ├── index.js
+│   └── routes.js
+├── .editorconfig
+├── .eslintrc.json
+├── .gitignore
+├── babel.config.js
+├── dependencies.json
+├── devDependencies.json
+├── index.js
+├── jsconfig.js
+├── LICENSE
+├── package.json
+└── README.md
