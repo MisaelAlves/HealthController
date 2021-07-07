@@ -109,7 +109,7 @@ Abaixo segue o que foi utilizado na criação deste template:
 
 ## Começando
 ```sh
-react-native init AwesomeExample --template rocketseat-advanced
+
 ```
 
 ### Estrutura de Arquivos
@@ -117,13 +117,13 @@ react-native init AwesomeExample --template rocketseat-advanced
 A estrutura de arquivos está da seguinte maneira:
 
 ```bash
-rocketseat-advanced
+Helth-Controller
 ├── src/
 │   ├── config/
 │   │   └── ReactotronConfig.js
 │   ├── images/
-│   │   ├── rocketseat_logo_roxa.png
-│   │   └── rocketseat_logo.png
+│   │   ├── helthController_logo_roxa.png
+│   │   └── helthController_logo.png
 │   ├── pages/
 │   │   └── Main/
 │   │       └── index.js
