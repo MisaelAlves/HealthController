@@ -119,6 +119,9 @@ A estrutura de arquivos está da seguinte maneira:
 ```bash
 Helth-Controller
 ├── src/
+│   ├── assets/
+│   │   └── images/
+│   │        └── Logo.png
 │   ├── config/
 │   │   └── ReactotronConfig.js
 │   ├── images/
