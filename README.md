@@ -128,6 +128,8 @@ Helth-Controller
 │   │   ├── helthController_logo_roxa.png
 │   │   └── helthController_logo.png
 │   ├── pages/
+|   |   |__Components/
+|   |   |  
 │   │   └── Main/
 │   │       └── index.js
 │   ├── services/
