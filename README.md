@@ -104,12 +104,15 @@ Abaixo segue o que foi utilizado na criação deste template:
   - [eslint-plugin-react-native](https://github.com/Intellicode/eslint-plugin-react-native) - Regras de linting do ESLint específicas do React Native;
   - [eslint-import-resolver-babel-plugin-root-import](https://github.com/olalonde/eslint-import-resolver-babel-root-import) - Um resolver da lib _babel-root-import_ para a lib _eslint-plugin-import_;
 - [EditorConfig](https://editorconfig.org/) - O EditorConfig é um formatador de arquivos e coleções em forma de Plugin para Editores de código/texto com o objetivo de manter um padrão de código consistente entre diferentes editores, IDE's ou ambientes;
+- [NativeBase](https://nativebase.io/) - É uma biblioteca existente desde os primeiros dias do React Native para oferecer suporte a componentes de interface de usuário de plataforma cruzada.;
 
 <!-- GETTING STARTED -->
 
 ## Começando
 ```sh
-
+npm install -g react-native-cli
+npm install 
+npx react-native run-android --port=8088
 ```
 
 ### Estrutura de Arquivos
@@ -122,14 +125,15 @@ Helth-Controller
 │   ├── assets/
 │   │   └── images/
 │   │        └── Logo.png
+│   ├── components/
+│   │   └── Alarm/
+│   │       └── index.js
 │   ├── config/
 │   │   └── ReactotronConfig.js
 │   ├── images/
 │   │   ├── helthController_logo_roxa.png
 │   │   └── helthController_logo.png
 │   ├── pages/
-|   |   |__Components/
-|   |   |  
 │   │   └── Main/
 │   │       └── index.js
 │   ├── services/
