@@ -1,59 +1,64 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import {
-  Text, Image, StyleSheet, Dimensions, ImageBackground, StatusBar,
+  View, Text
 } from 'react-native';
 
-const styles = StyleSheet.create({
-  container: {
-    alignItems: 'center',
-    flex: 1,
-    paddingHorizontal: 20,
-  },
-  fileName: {
-    fontWeight: 'bold',
-    marginTop: 5,
-  },
-  instructions: {
-    color: '#DDD',
-    fontSize: 14,
-    marginTop: 20,
-    textAlign: 'center',
-  },
-  logo: {
-    height: Dimensions.get('window').height * 0.11,
-    marginVertical: Dimensions.get('window').height * 0.11,
-    width: Dimensions.get('window').height * 0.11 * (1950 / 662),
-  },
-  welcome: {
-    color: '#fff',
-    fontSize: 22,
-    fontWeight: 'bold',
-    textAlign: 'center',
-  },
-});
+import AddButton from '../Main/Components/addButton'
+import RegisterMedicine from './Components/registerMedicine';
 
-const Main = () => (
-  <ImageBackground
-    source={{
-      uri: 'https://s3-sa-east-1.amazonaws.com/rocketseat-cdn/background.png',
-    }}
-    style={styles.container}
-    resizeMode="cover"
-  >
-    <StatusBar barStyle="light-content" backgroundColor="#7159c1" />
-    <Image
-      source={{
-        uri: 'https://s3-sa-east-1.amazonaws.com/rocketseat-cdn/rocketseat_logo.png',
-      }}
-      style={styles.logo}
-      resizeMode="contain"
-    />
-    <Text style={styles.welcome}>Bem-vindo ao Template </Text>
-    <Text style={styles.instructions}>Essa é a tela principal da sua</Text>
-    <Text style={styles.instructions}>Você  </Text>
-    <Text style={[styles.instructions, styles.fileName]}>src/pages/Main/index.js</Text>
-  </ImageBackground>
-);
+const Main = () => {
+
+  const [handleAddButton,setHandleAddButton] = useState(true)
+  const [handleRegisterMedicine,setRegisterMedicine] = useState(false)
+  const [handleCancelButton, setHandleCancelButton] = useState(true)
+  const [handleSalveButton, setHandleSalveButton] = useState(true);
+
+
+  const handleClickAddButton = (value) => {
+    setHandleAddButton(value)
+    setRegisterMedicine(!value)
+  }
+
+  const handleClickRegisterMedicine = (value) => {
+    setRegisterMedicine(value)
+    setHandleAddButton(!value)
+  }
+
+  const handleClickCancelButton = (value) => {
+    setHandleCancelButton(value)
+  }
+
+  const handleClickSalveButton = (value) => {
+    setHandleSalveButton(value)
+  }
+
+
+  return(
+    <>
+      { 
+        handleAddButton && 
+        <>
+          <View>
+            <Text> Home </Text>
+          </View> 
+
+          <View>
+            <Text> Componente: alarmes com titulo e button on/off </Text>
+            <Text> Componente: alarmes com titulo e button on/off </Text>
+            <Text> Componente: alarmes com titulo e button on/off </Text>
+          </View>
+        
+          <AddButton handleClickAddButton={handleClickAddButton}/>
+        </>
+      }
+
+      { 
+        handleRegisterMedicine && 
+        <RegisterMedicine handleClickRegisterMedicine={handleClickRegisterMedicine} />
+      }
+    </>
+  )
+};
 
 export default Main;
