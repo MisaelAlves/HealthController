@@ -1,17 +1,17 @@
 import { expect } from '@jest/globals';
 import React from 'react'
 import renderer from 'react-test-renderer';
-import DescriptionField from '../Components/descriptionField'
+import Description from '../Components/description'
 
 describe('DescriptionField', () => {
 
-    test('Should return all proptypes of DescriptionField component', () => {
+    test('Should return all proptypes of Description component', () => {
         const style = {
             "height": 65,
             "margin": 12,
             "borderWidth": 1,
         }
-        const wrapper = renderer.create(<DescriptionField/>).toJSON()
+        const wrapper = renderer.create(<Description/>).toJSON()
 
         expect(wrapper.type).toEqual("TextInput")
         expect(wrapper.props).toHaveProperty("placeholder","Descrição...")
