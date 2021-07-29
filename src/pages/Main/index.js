@@ -1,8 +1,8 @@
 import React from 'react';
-import DescriptionField from './Components/descriptionField'
+import {Text} from 'react-native'
 
-const Main = () => (
-  <DescriptionField/>
-);
+const Main = () => {
+  return(<Text> Ola Testando </Text>)
+};
 
 export default Main;

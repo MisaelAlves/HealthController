@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { StyleSheet, TextInput } from "react-native";
 
-const DescriptionField = () => {
+const Description = () => {
   const [description, setDescription] = useState(null);
 
   return (
@@ -24,5 +24,5 @@ const styles = StyleSheet.create({
   },
 });
 
-export default DescriptionField;
+export default Description;
 
