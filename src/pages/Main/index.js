@@ -1,8 +1,8 @@
 import React from 'react';
-import Title from './Components/title'
+import {Text} from 'react-native'
 
-const Main = () => (
-  <Title/>
-);
+const Main = () => {
+  return(<Text>Ola testando</Text>)
+}
 
 export default Main;
