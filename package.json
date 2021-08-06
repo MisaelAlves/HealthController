@@ -10,11 +10,13 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@react-native-community/slider": "^3.0.3",
     "axios": "^0.21.1",
     "prop-types": "^15.7.2",
     "react": "17.0.1",
     "react-native": "0.64.2",
     "react-native-gesture-handler": "^1.10.3",
+    "react-native-vector-icons": "^8.1.0",
     "react-navigation": "^4.4.4",
     "react-redux": "^7.2.4",
     "reactotron-react-native": "^5.0.0",
